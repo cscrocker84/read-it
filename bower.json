@@ -1,0 +1,24 @@
+{
+  "name": "read-it",
+  "homepage": "https://github.com/cscrocker84/read-it",
+  "authors": [
+    "Charlie Crocker <cscrocker84@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.1",
+    "angular-route": "^1.6.1",
+    "bootstrap": "^3.3.7",
+    "materialize": "^0.98.0",
+    "firebase": "^3.6.8"
+  }
+}
