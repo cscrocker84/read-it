@@ -25,20 +25,19 @@ app.config(($routeProvider, $locationProvider) => {
   $routeProvider
     .when("/",{
       controller: "HomeCtrl",
-      templateUrl: "/app/components/homePage.html"
+      templateUrl: "/app/partials/homePage.html"
     })
     .when("/login",{
       controller: "LoginCtrl",
-      templateUrl: "/app/components/loginPage.html"
+      templateUrl: "/app/partials/loginPage.html"
     })
     .when("/newPost",{
       controller: "PostCtrl",
-      templateUrl: "app/components/newPost.html",
-      resolve: checkForAuth
+      templateUrl: "app/partials/newPost.html",
     })
     .when("/register",{
       controller: "RegisterCtrl",
-      templateUrl: "app/components/register.html"
+      templateUrl: "app/partials/register.html"
     })
 
 })
