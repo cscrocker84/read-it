@@ -5,7 +5,7 @@
 	<title>Who Reads Nowadays?</title>
 	<link rel="stylesheet" type="text/css" href="/lib/materialize/dist/css/materialize.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="app/main.css">
 </head>
 <body ng-app="readApp">
 
@@ -14,7 +14,7 @@
       <div class="nav-wrapper">
         <a href="#/" class="brand-logo">Reddit</a>
         <ul class="right hide-on-med-and-down">
-          <li><a data-target="modal1" href="#/createPost" class="btn">Create Post</a></li>
+          <li><a data-target="modal1" href="#/newPost" class="btn">Create Post</a></li>
           <li><a href="#/login">Login</a></li>
           <li><a href="#/logout" ng-click = "logout()">Logout</a></li>
 
@@ -25,7 +25,8 @@
   </div>
 
 	<div ng-view></div>
-	<script src="/lib/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.6.8/firebase.js"></script>
+	<script src="/lib/jquery/dist/jquery.min.js"></script>
 	<script src="/lib/angular/angular.min.js"></script>
 	<script src="/lib/angular-route/angular-route.min.js"></script>
 	<script src="/lib/firebase/firebase.js"></script>
@@ -33,9 +34,11 @@
 	<script src="/lib/lodash/lodash.js"></script>
 	<script src="/app/app.js"></script>
 	<script src="/app/config/config.js"></script>
-	<script src="/app/components/loginCtrl.js"></script>
 	<script src="/app/components/homeCtrl.js"></script>
+	<script src="/app/components/loginCtrl.js"></script>
 	<script src="/app/factories/authFactory.js"></script>
+	<script src="/app/components/postCtrl.js"></script>
+	<script src="/app/components/registerCtrl.js"></script>
 
 </body>
 </html>
