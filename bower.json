@@ -12,13 +12,15 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "lib"
   ],
   "dependencies": {
     "angular": "^1.6.1",
     "angular-route": "^1.6.1",
     "bootstrap": "^3.3.7",
     "materialize": "^0.98.0",
-    "firebase": "^3.6.8"
+    "firebase": "^3.6.8",
+    "lodash": "^4.17.4"
   }
 }
