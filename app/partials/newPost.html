@@ -1,0 +1,13 @@
+ <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Create Post</h4>
+      <p>You can post your favorite dumb shit to reddit here!</p>
+      <input type="text" name="postTitle" placeholder="Post Title" ng-model="postTitle">
+      <input type="url" name="postUrl" placeholder="Link url" ng-model="postUrl">
+      <input type="file" name="inputFile" placeholder="Upload Your Dumb Photo" id="fileInput">
+
+    </div>
+    <div class="modal-footer">
+      <a href="/" class=" modal-action modal-close waves-effect waves-green btn-flat" ng-click = "createPost()">Post</a>
+    </div>
+  </div>
