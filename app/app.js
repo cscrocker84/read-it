@@ -1,2 +1,2 @@
 
-const app = angular.module('readApp', ['ngRoute']);
+const app = angular.module("readApp", ["ngRoute"]);
