@@ -1,3 +1,46 @@
 <h3>Stupid Shit Goes Here</h3>
-<br>
-<img id="myImg">
+<div class="center">
+  <!-- <div ng-repeat = "(dislikekey,value) in dislikes"></div> -->
+
+  <div ng-repeat = "(key,value) in Pictures" class="row">
+   <!-- <div dir-paginate-start="(key,value) in Pictures | itemsPerPage: 10"> -->
+  <div class="col s12 m6">
+  <div class="card">
+<div class="card horizontal">
+      <!-- <div class="card-image"> -->
+              <!-- <div class="card-image"> -->
+    <p class= "title">Title: {{value.Title}}</p>
+    <p class = "getIt"><button  ng-click= "doLike(key,$event)">
+              <i class="material-icons">thumb_up</i></button>
+              {{value.counter}}
+              <button ng-click= "dontLike(key,$event,userkey)">
+               <i class="material-icons">thumb_down</i></button></p>
+
+     <a target="_blank" href="{{value.link}}"><img src="{{value.url}}"></a>
+
+
+    <!-- <p>Posted by {{value.user}}</p> -->
+
+  </div>
+  </div>
+
+  </div>
+
+</div>
+</div>
+
+
+ <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Create Post</h4>
+      <p>Here you can create your favorite post to Reddit!!!</p>
+      <input type="text" name="postTitle" placeholder="Post Title" ng-model="postTitle">
+      <input type="url" name="postUrl" placeholder="Link url" ng-model="postUrl">
+      <input type="file" name="inputFile" placeholder="Upload Your Post Photo" id="fileInput">
+      <input type="submit" value="Post" ng-click = "Post()">
+    </div>
+    <!-- <div class="modal-footer">
+      <a  class=" modal-action modal-close waves-effect waves-green btn-flat" ng-click = "createPost()">Post</a>
+    </div> -->
+  </div>
