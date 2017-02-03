@@ -13,5 +13,5 @@ app.factory("authFactory",function () {
     getUid:()=> {
       return UID = firebase.auth().currentUser.uid
     }
-  }
-})
+  };
+});
