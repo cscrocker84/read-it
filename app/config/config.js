@@ -12,7 +12,7 @@ app.config(($routeProvider, $locationProvider) => {
 
  const checkForAuth = {
       checkForAuth ($location) {
-        // http://stackoverflow.com/questions/37370224/firebase-stop-listening-onauthstatechanged
+
         const authReady = firebase.auth().onAuthStateChanged(user => {
           authReady()
           if (!user) {
@@ -34,6 +34,7 @@ app.config(($routeProvider, $locationProvider) => {
     .when("/newPost",{
       controller: "PostCtrl",
       templateUrl: "app/partials/newPost.html",
+      resolve: checkForAuth
     })
     .when("/register",{
       controller: "RegisterCtrl",
